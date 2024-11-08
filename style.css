@@ -14,6 +14,8 @@
     height: 30%;
     width: 100%;
     background-color: #2e8b57;
+    display: flex;
+    flex-direction: row-reverse;
 }
 .road{
     height: 30%;
@@ -44,7 +46,7 @@
     height: 60px;
     top: 10px;
     position: relative;
-    animation: wind 4s infinite linear;
+    animation: wind 2s infinite linear;
 }
 .cloud2{
     height: 60px;
@@ -61,6 +63,12 @@
     to{transform: translateX(0px);}
 }
 .star{
-    display: flex;
-    justify-content: end;
+    height: 200px;
+    width: 300px;
+    animation: jump 2s linear infinite ;
+}
+@keyframes jump{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(50px);}
+    100%{transform: translateY(0px);}
 }
